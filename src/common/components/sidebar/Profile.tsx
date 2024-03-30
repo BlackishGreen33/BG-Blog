@@ -1,16 +1,15 @@
-import { useEffect, useState } from 'react';
-
 import clsx from 'clsx';
 import { AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 import { MenuContext } from '@/common/context/MenuContext';
 import useIsMobile from '@/common/hooks/useIsMobile';
 
+import MobileMenu from './MobileMenu';
+import MobileMenuButton from './MobileMenuButton';
 import ProfileHeader from './ProfileHeader';
 import Status from '../elements/Status';
 import ThemeToggleButton from '../elements/ThemeToggleButton';
-import MobileMenu from './MobileMenu';
-import MobileMenuButton from './MobileMenuButton';
 
 interface ProfileProps {
   isScrolled?: boolean;
@@ -49,7 +48,7 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
     <MenuContext.Provider value={{ hideNavbar }}>
       <div
         className={clsx(
-          'bg-light dark:bg-dark fixed z-20 w-full p-5 shadow-sm sm:shadow-none lg:relative lg:border-none lg:!bg-transparent lg:p-0 dark:border-b dark:border-neutral-800',
+          'fixed z-20 w-full bg-light p-5 shadow-sm dark:border-b dark:border-neutral-800 dark:bg-dark sm:shadow-none lg:relative lg:border-none lg:!bg-transparent lg:p-0',
           expandMenu && 'pb-0'
         )}
       >
