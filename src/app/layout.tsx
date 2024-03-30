@@ -6,6 +6,8 @@ import { ThemeProvider } from 'next-themes';
 
 import '@/common/styles/globals.scss';
 
+import Layout from '@/common/components/layouts';
+
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -35,7 +37,7 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          {children}
+          <Layout>{children}</Layout>
         </ThemeProvider>
       </body>
     </html>
