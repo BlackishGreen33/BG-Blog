@@ -20,7 +20,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       )}
     >
       <Image
-        src='/images/aulianza-new.png'
+        src='https://www.github.com/BlackishGreen33.png'
         alt='墨綠B.G.'
         width={expandMenu ? 80 : imageSize}
         height={expandMenu ? 80 : imageSize}
