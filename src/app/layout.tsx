@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import Head from 'next/head';
+import Head from 'next/head';
 
 import '@/common/styles/globals.scss';
 
-// import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
+import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
-      {/* <Head>
+      <Head>
         <style>
           {`
             html {
@@ -30,7 +30,7 @@ export default function RootLayout({
             }
           `}
         </style>
-      </Head> */}
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
