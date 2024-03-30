@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
-
 import { ThemeProvider } from 'next-themes';
 
 import '@/common/styles/globals.scss';
 
 import Layout from '@/common/components/layouts';
-
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
 const inter = Inter({ subsets: ['latin'] });

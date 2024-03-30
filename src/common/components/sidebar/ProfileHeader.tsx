@@ -21,7 +21,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
     >
       <Image
         src='/images/aulianza-new.png'
-        alt='Ryan Aulia'
+        alt='墨綠B.G.'
         width={expandMenu ? 80 : imageSize}
         height={expandMenu ? 80 : imageSize}
         rounded='rounded-full'

@@ -4,11 +4,10 @@ import clsx from 'clsx';
 // import { useRouter } from 'next/router';
 // import { useTheme } from 'next-themes';
 import { ReactNode } from 'react';
-// import { useWindowSize } from 'usehooks-ts';
 
+// import { useWindowSize } from 'usehooks-ts';
 // import useHasMounted from '@/common/hooks/useHasMounted';
 // import ChatButton from '@/modules/chat/components/ChatButton';
-
 import HeaderSidebar from './header/HeaderSidebar';
 // import HeaderTop from './header/HeaderTop';
 // import NowPlayingBar from '../elements/NowPlayingBar';
