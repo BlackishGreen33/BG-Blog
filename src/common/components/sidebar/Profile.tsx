@@ -6,11 +6,11 @@ import { AnimatePresence } from 'framer-motion';
 import { MenuContext } from '@/common/context/MenuContext';
 import useIsMobile from '@/common/hooks/useIsMobile';
 
+import ProfileHeader from './ProfileHeader';
 import Status from '../elements/Status';
 import ThemeToggleButton from '../elements/ThemeToggleButton';
 import MobileMenu from './MobileMenu';
 import MobileMenuButton from './MobileMenuButton';
-import ProfileHeader from './ProfileHeader';
 
 interface ProfileProps {
   isScrolled?: boolean;
