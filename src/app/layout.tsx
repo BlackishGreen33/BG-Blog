@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 
+import { ThemeProvider } from 'next-themes';
+
 import '@/common/styles/globals.scss';
 
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
@@ -31,7 +33,11 @@ export default function RootLayout({
           `}
         </style>
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
