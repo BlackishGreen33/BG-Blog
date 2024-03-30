@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 import useIsMobile from '@/common/hooks/useIsMobile';
 
-// import Navigation from '../../sidebar/Navigation';
 import Copyright from './Copyright';
+// import Navigation from '../../sidebar/Navigation';
 import Breakline from '../../elements/Breakline';
 import Profile from '../../sidebar/Profile';
 
@@ -27,15 +27,15 @@ const Sidebar = () => {
 
   return (
     <div
-      id='sidebar'
-      className='sticky top-0 z-10 flex flex-col transition-all duration-300 lg:py-8'
+      id="sidebar"
+      className="sticky top-0 z-10 flex flex-col transition-all duration-300 lg:py-8"
     >
       <Profile isScrolled={isScrolled} />
       {!isMobile && (
         <>
           <Breakline />
           {/* <Navigation /> */}
-          <Breakline className='mt-2' />
+          <Breakline className="mt-2" />
           <Copyright />
         </>
       )}

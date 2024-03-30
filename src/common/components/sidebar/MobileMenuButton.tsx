@@ -17,13 +17,13 @@ const MobileMenuButton = ({
   const menuSpanData = [{ index: 1 }, { index: 2 }, { index: 3 }];
 
   return (
-    <StyledMenu className='flex lg:hidden' onClick={handleMenuToggle}>
+    <StyledMenu className="flex lg:hidden" onClick={handleMenuToggle}>
       {menuSpanData.map((item) => (
         <StyledMenuSpan
           key={item.index}
           className={clsx(
             'bg-neutral-950 dark:bg-neutral-100 ',
-            expandMenu && 'active',
+            expandMenu && 'active'
           )}
         />
       ))}

@@ -23,9 +23,9 @@ const Tooltip = ({ title, children }: TooltipProps) => {
   };
 
   return (
-    <div className='relative inline-block'>
+    <div className="relative inline-block">
       <div
-        className='tooltip-container relative'
+        className="tooltip-container relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -33,10 +33,10 @@ const Tooltip = ({ title, children }: TooltipProps) => {
       </div>
       {isTooltipVisible && (
         <motion.div
-          className='absolute bottom-full mb-2 hidden w-max max-w-xs rounded bg-neutral-500 px-2 py-1 text-xs font-medium text-neutral-100 dark:bg-neutral-100 dark:text-neutral-700 lg:block'
+          className="absolute bottom-full mb-2 hidden w-max max-w-xs rounded bg-neutral-500 px-2 py-1 text-xs font-medium text-neutral-100 dark:bg-neutral-100 dark:text-neutral-700 lg:block"
           variants={tooltipVariants}
-          initial='hidden'
-          animate='visible'
+          initial="hidden"
+          animate="visible"
         >
           {title}
         </motion.div>
