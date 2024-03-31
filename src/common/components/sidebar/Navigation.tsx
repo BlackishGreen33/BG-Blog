@@ -14,7 +14,7 @@ const Navigation = () => {
   const { width } = useWindowSize();
   const isMobile = width < 480;
 
-  // const filterdMenu = MENU_ITEMS?.filter((item) => item?.isShow);
+  const filterdMenu = MENU_ITEMS?.filter((item) => item?.isShow);
 
   const handleOpenCommandPalette = () => {
     setIsOpen(true);
@@ -22,16 +22,20 @@ const Navigation = () => {
 
   return (
     <div>
-      {/* <Menu list={filterdMenu} /> */}
-      <Breakline className='mb-2' />
+      <Menu list={filterdMenu} />
+      <Breakline className="mb-2" />
       <MenuItem
         title={isMobile ? 'Command' : 'cmd + k'}
-        href='#'
-        icon={<CommandIcon className='group-hover:-rotate-12 transition-all duration-300' size={20} />}
+        href="#"
+        icon={
+          <CommandIcon
+            className="transition-all duration-300 group-hover:-rotate-12"
+            size={20}
+          />
+        }
         isExternal={false}
         onClick={() => handleOpenCommandPalette()}
-      >
-      </MenuItem>
+      ></MenuItem>
     </div>
   );
 };
