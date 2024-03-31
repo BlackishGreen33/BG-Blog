@@ -20,20 +20,18 @@ const Navigation = () => {
     setIsOpen(true);
   };
 
-  const cn = 'group-hover:-rotate-12 transition-all duration-300';
-
   return (
     <div>
       {/* <Menu list={filterdMenu} /> */}
       <Breakline className='mb-2' />
-      {/* <MenuItem
+      <MenuItem
         title={isMobile ? 'Command' : 'cmd + k'}
         href='#'
-        icon={<CommandIcon className={cn} size={20} />}
+        icon={<CommandIcon className='group-hover:-rotate-12 transition-all duration-300' size={20} />}
         isExternal={false}
         onClick={() => handleOpenCommandPalette()}
       >
-      </MenuItem> */}
+      </MenuItem>
     </div>
   );
 };
