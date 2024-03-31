@@ -1,12 +1,13 @@
 import { NextPage } from 'next';
 
 import Container from '@/common/components/elements/Container';
+import Home from '@/modules/home';
 
 const HomePage: NextPage = () => {
   return (
     <>
       <Container data-aos="fade-up">
-        <h1>Welcome to my blog</h1>
+        <Home />
       </Container>
     </>
   );
