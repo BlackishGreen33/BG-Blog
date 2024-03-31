@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import useIsMobile from '@/common/hooks/useIsMobile';
 
 import Copyright from './Copyright';
-// import Navigation from '../../sidebar/Navigation';
 import Breakline from '../../elements/Breakline';
+import Navigation from '../../sidebar/Navigation';
 import Profile from '../../sidebar/Profile';
 
 const Sidebar = () => {
@@ -34,7 +34,7 @@ const Sidebar = () => {
       {!isMobile && (
         <>
           <Breakline />
-          {/* <Navigation /> */}
+          <Navigation />
           <Breakline className="mt-2" />
           <Copyright />
         </>
